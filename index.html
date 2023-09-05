@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>document</title>
+	<style >
+		.box{
+			width: 720px;
+			height: 110px;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+		
+		.slider{
+			width: 1760px;
+			height: 110px;
+			position: relative;
+			animation: stp 15s infinite;
+		}
+		@keyframes stp{
+			0%{top: 0;left: 0;}
+			100%{top: 0;left: -1050px;}
+
+		}
+
+		.img{
+			float: left;
+			margin: 20px;
+			filter:grayscale(100%);
+		}
+
+
+		img:hover{
+			filter: none;
+		}
+
+		.slider:hover{
+			animation-play-state: paused;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="slider">
+			<img src="images/20.png" alt="1" class="img">
+			<img src="images/19.png" alt="2" class="img">
+			<img src="images/18.png" alt="3" class="img">
+			<img src="images/17.png" alt="4" class="img">
+			<img src="images/16.png" alt="5" class="img">
+			<img src="images/15.png" alt="6" class="img">
+			<img src="images/14.png" alt="7" class="img">
+			<img src="images/13.png" alt="8" class="img">
+			>
+			
+		</div>
+	</div>
+
+</body>
+</html>
